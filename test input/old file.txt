@@ -1,0 +1,4 @@
+Vendor Item Number	Current Price
+A123	17
+456	19
+C789	16

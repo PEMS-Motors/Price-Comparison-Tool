@@ -1,0 +1,4 @@
+Vendor Item Number	Model Number	New Price
+A123	123	19
+	456	18
+C789		16

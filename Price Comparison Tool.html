@@ -1,0 +1,44 @@
+<html>
+
+  <head>
+    <title>Price File Comparison Tool</title>
+    <script src='components/main.js' defer></script>
+    <link rel='stylesheet' href='components/style.css' />
+  </head>
+
+  <body>
+    <img src='components/pemslogo.png' />
+    <h3>Price File Comparison Tool</h3>
+    <p>1. Save a current/old price file from excel with the following columns in "text (tab delimited) (*.txt)" format.</p>
+    <p>Example:</p>
+    <table>
+      <tr><th>Vendor Item Number</th><th>Vendor Price</th></tr>
+      <tr><td>A123</td><td>15.00</td></tr>
+      <tr><td>234</td><td>19.99</td></tr>
+      <tr><td>C345</td><td>30.00</td></tr>
+    </table>
+    <p>2. Save a new price file from excel with the following columns in "text (tab delimited) (*.txt)" format.</p>
+    <p>Example:</p>
+    <table>
+      <tr><th>Vendor Item Number</th><th>Vendor Model Number</th><th>Vendor Price</th></tr>
+      <tr><td>A123</td><td>123</td><td>15.99</td></tr>
+      <tr><td></td><td>234</td><td>22.50</td></tr>
+      <tr><td>C345</td><td></td><td>25.00</td></tr>
+    </table>
+    <p>3. Click the <b><u><i>Browse...</b></u></i> button and select the current/old price text file</p>
+    <input type='file' id='OldPriceFileInput' />
+    <p>4. Click the <b><u><i>Browse...</b></u></i> button and select the new price text file</p>
+    <input type='file' id='NewPriceFileInput' />
+    <p>5. Press the <b><i><u>Load Files</u></b></i> button to process the Old and New price files.</p>
+    <button onclick='PriceComparison.LoadFiles();'>Load Files</button>
+    <p>6. Press the <b><i><u>Export Report</u></i></b> button and save the file. (alternatively: you can select "open" instead of saving the file to open a temporary file instead of saving to your hard drive.)</p>
+    <button onclick='PriceComparison.ExportReport();'>Export Report</button>
+    <p>7. Create a new Microsoft Excel document and format <b><i><u>column A</u></i></b> as "text" and <b><i><u>column E</u></i></b> as a percentage.
+    <p>8. Open the report generated in step 6 with notepad or an equivalent text file editor</p>
+    <p>9. Copy it's entire contents, select the cell <b><u><i>A1</b></u></i> in the excel document, and paste the data. (the keyboard shortcut <u><b><i>ctrl + A</u></b></i> will highlight everything in the file. <u><b><i>ctrl + C</u></b></i> will copy the content that is highlighted. <u><b><i>ctrl + V</u></b></i> will paste the data).</p>
+    <br>
+    <br>
+    <br>
+    <p>For questions regarding the Price File Comparison tool, contact <a href="mailto:alan.lovitt@pemsmotors.com?subject=Price%20Comparison%20Tool%20Inquiry">Alan Lovitt</a></p>
+  </body>
+</html>
